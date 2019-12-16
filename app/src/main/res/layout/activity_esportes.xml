@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    android:orientation="vertical"
+    tools:context=".EsportesActivity">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ESCOLHA O ESPORTE"
+        android:textAlignment="center"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginTop="80dp"
+        android:textSize="32dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="50dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/linearesportes1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titulo">
+
+        <ImageButton
+            android:id="@+id/btFutebol"
+            android:layout_height="130dp"
+            android:layout_width="130dp"
+            android:layout_margin="26dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/futebol" />
+
+        <ImageButton
+            android:id="@+id/btBasquete"
+            android:layout_height="130dp"
+            android:layout_width="130dp"
+            android:layout_margin="26dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_toRightOf="@id/btFutebol"
+            app:srcCompat="@drawable/basquete" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearesportes1">
+
+
+        <ImageButton
+            android:id="@+id/btVolei"
+            android:layout_height="130dp"
+            android:layout_width="130dp"
+            android:layout_margin="26dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/volei" />
+
+        <ImageButton
+            android:id="@+id/btTenis"
+            android:layout_height="130dp"
+            android:layout_width="130dp"
+            android:layout_marginTop="32dp"
+            android:layout_margin="26dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:layout_toRightOf="@id/btVolei"
+            app:srcCompat="@drawable/tenismesa" />
+
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
