@@ -1,9 +1,176 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/bg1"
     tools:context=".TenisActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/tenis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TÊNIS DE MESA"
+        android:fontFamily="sans-serif-light"
+        android:textAlignment="center"
+        android:layout_alignParentTop="true"
+        android:textSize="32dp"
+        android:textColor="#FFFFFF"
+        />
+
+    <LinearLayout
+        android:id="@+id/lineartenis1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_below="@id/tenis">
+
+        <TextView
+            android:id="@+id/placartenis1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textSize="80sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-light"
+            />
+        <TextView
+            android:id="@+id/x"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="100dp"
+            android:text="x"
+            android:textSize="50sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-light"
+            />
+
+        <TextView
+            android:id="@+id/placartenis2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textSize="80sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-light"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/lineartenis2"
+        android:layout_below="@id/lineartenis1">
+
+        <TextView
+            android:id="@+id/nomeTime1Tenis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="35sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-light"
+            />
+        <TextView
+            android:id="@+id/nomeTime2Tenis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="180dp"
+            android:textSize="35sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-light"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lineartenis3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lineartenis2"
+        android:orientation="horizontal"
+        >
+        <Button
+            android:id="@+id/botaoPosit1Tenis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="35dp"
+            android:layout_marginStart="50dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/estilo_botao_placar"
+            />
+        <Button
+            android:id="@+id/botaoNegat1Tenis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="35dp"
+            android:layout_marginStart="50dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/estilo_botao_placar"
+            />
+        <Button
+            android:id="@+id/botaoPosit2Tenis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textSize="35dp"
+            android:layout_marginStart="80dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/estilo_botao_placar2"
+            />
+        <Button
+            android:id="@+id/botaoNegat2Tenis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="35dp"
+            android:layout_marginStart="50dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/estilo_botao_placar2"
+            />
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lineartenis3"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/placarSetTime1Tenis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textSize="40sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginEnd="100dp"
+            />
+
+
+        <TextView
+            android:id="@+id/placarSetTime2Tenis"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3"
+            android:textSize="40sp"
+            android:textColor="#FFFFFF"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginStart="100dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

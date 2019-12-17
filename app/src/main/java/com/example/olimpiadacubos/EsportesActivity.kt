@@ -35,7 +35,7 @@ class EsportesActivity : AppCompatActivity() {
         }//fim btBasquete
 
         btVolei.setOnClickListener {
-            val nomeDoTime1 = intent.getStringExtra("Time1")
+            val nomeDoTime1 = intent.getStringExtra("TIME1")
             val nomeDoTime2 = intent.getStringExtra("TIME2")
 
             val intent = Intent(this, VoleiActivity::class.java)
@@ -46,7 +46,12 @@ class EsportesActivity : AppCompatActivity() {
         }//fim btVolei
 
         btTenis.setOnClickListener {
+            val nomeDoTime1 = intent.getStringExtra("TIME1")
+            val nomeDoTime2 = intent.getStringExtra("TIME2")
+
             val intent = Intent(this, TenisActivity::class.java)
+            intent.putExtra("TIME1", nomeDoTime1)
+            intent.putExtra("TIME2", nomeDoTime2)
             startActivity(intent)
 
         }//fim btTenis
